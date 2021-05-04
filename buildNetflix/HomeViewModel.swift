@@ -26,5 +26,8 @@ class HomeViewModel: ObservableObject {
     func setupMovies() {
         movies["Trending Now"] = exampleMovies
         movies["Comedy"] = exampleMovies.shuffled()
+        movies["New Releases"] = exampleMovies.shuffled()
+        movies["Watch It Again"] = exampleMovies.shuffled()
+        movies["Sci-Fi Movies"] = exampleMovies.shuffled()
     }
 }
