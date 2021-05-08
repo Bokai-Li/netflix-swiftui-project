@@ -86,6 +86,7 @@ let exampleMovie1 = Movie(
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [],
+    episodes: allExampleEpisodes,
     trailers: exampleTrailers)
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -99,6 +100,7 @@ let exampleMovie2 = Movie(
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [],
+    episodes: allExampleEpisodes,
     trailers: exampleTrailers)
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
@@ -112,6 +114,7 @@ let exampleMovie3 = Movie(
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [],
+    episodes: allExampleEpisodes,
     trailers: exampleTrailers)
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
@@ -125,7 +128,7 @@ let exampleMovie4 = Movie(
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [],
-    promotionHeadline: "Best Rated Show",
+    episodes: allExampleEpisodes, promotionHeadline: "Best Rated Show",
     trailers: exampleTrailers)
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
@@ -139,7 +142,7 @@ let exampleMovie5 = Movie(
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [],
-    promotionHeadline: "New episodes coming soon",
+    episodes: allExampleEpisodes, promotionHeadline: "New episodes coming soon",
     trailers: exampleTrailers)
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
@@ -153,7 +156,7 @@ let exampleMovie6 = Movie(
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [],
-    promotionHeadline: "Watch Season 6 Now",
+    episodes: allExampleEpisodes, promotionHeadline: "Watch Season 6 Now",
     trailers: exampleTrailers)
 let exampleMovie7 = Movie(
     id: UUID().uuidString,
@@ -166,7 +169,7 @@ let exampleMovie7 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
-    moreLikeThisMovies: [],
+    moreLikeThisMovies: [], episodes: allExampleEpisodes,
     trailers: exampleTrailers)
 //https://demonslayer-anime.com/risshihen/assets/img/top/img_main_pc.jpg
 let exampleMovie8 = Movie(
@@ -176,11 +179,12 @@ let exampleMovie8 = Movie(
     categories: ["Action", "Adventure", "Animation"],
     year:2019,
     rating:"TV-14",
-    numberOfSeasons: 1,
+    numberOfSeasons: 2,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6,exampleMovie7],
+    episodes: allExampleEpisodes,
     promotionHeadline: "New movie coming soon!",
     trailers: exampleTrailers)
 
