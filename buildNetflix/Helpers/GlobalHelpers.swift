@@ -86,7 +86,6 @@ let exampleMovie1 = Movie(
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [],
-    episodes: allExampleEpisodes,
     trailers: exampleTrailers)
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -100,7 +99,6 @@ let exampleMovie2 = Movie(
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
     moreLikeThisMovies: [],
-    episodes: allExampleEpisodes,
     trailers: exampleTrailers)
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
