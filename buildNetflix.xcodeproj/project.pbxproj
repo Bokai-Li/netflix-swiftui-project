@@ -12,6 +12,8 @@
 		7C0F0E13263F45B0005E17AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C0F0E12263F45B0005E17AA /* Assets.xcassets */; };
 		7C0F0E16263F45B0005E17AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C0F0E15263F45B0005E17AA /* Preview Assets.xcassets */; };
 		7C0F0E1E263F46D5005E17AA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F0E1D263F46D5005E17AA /* HomeView.swift */; };
+		7C11FC72266D5EA600B8355B /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C11FC71266D5EA600B8355B /* PopularMovieView.swift */; };
+		7C11FC74266D74DF00B8355B /* SearchResultGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C11FC73266D74DF00B8355B /* SearchResultGrid.swift */; };
 		7C19361426458AD7009A9382 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C19361326458AD7009A9382 /* VideoPreviewImage.swift */; };
 		7C19361626458F5D009A9382 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C19361526458F5D009A9382 /* TrailerList.swift */; };
 		7C19361A2645B2E9009A9382 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1936192645B2E9009A9382 /* EpisodesView.swift */; };
@@ -46,6 +48,8 @@
 		7C0F0E15263F45B0005E17AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C0F0E17263F45B0005E17AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C0F0E1D263F46D5005E17AA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7C11FC71266D5EA600B8355B /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
+		7C11FC73266D74DF00B8355B /* SearchResultGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultGrid.swift; sourceTree = "<group>"; };
 		7C19361326458AD7009A9382 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		7C19361526458F5D009A9382 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 		7C1936192645B2E9009A9382 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
@@ -102,9 +106,9 @@
 		7C0F0E0D263F45A3005E17AA /* buildNetflix */ = {
 			isa = PBXGroup;
 			children = (
-				7C51F97E264C7435003A09DB /* Seach */,
 				7C0F0E0E263F45A3005E17AA /* buildNetflixApp.swift */,
 				7C0F0E10263F45A3005E17AA /* ContentView.swift */,
+				7C51F97E264C7435003A09DB /* Seach */,
 				7C23032226422D6B00AA957B /* HomeViews */,
 				7C23032326422D8D00AA957B /* HelperViews */,
 				7C2303332643A22F00AA957B /* VideoPlayer */,
@@ -195,6 +199,8 @@
 				7C51F97F264C743F003A09DB /* SearchBar.swift */,
 				7C51F985264EFCD9003A09DB /* SearchView.swift */,
 				7C51F987264EFD03003A09DB /* SearchVM.swift */,
+				7C11FC71266D5EA600B8355B /* PopularMovieView.swift */,
+				7C11FC73266D74DF00B8355B /* SearchResultGrid.swift */,
 			);
 			path = Seach;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C11FC72266D5EA600B8355B /* PopularMovieView.swift in Sources */,
 				7C19361A2645B2E9009A9382 /* EpisodesView.swift in Sources */,
 				7C51F98A264EFEFC003A09DB /* GenerateMovies.swift in Sources */,
 				7C51F988264EFD03003A09DB /* SearchVM.swift in Sources */,
@@ -289,6 +296,7 @@
 				7C7B748C263F4C7400947986 /* StandardHomeMovie.swift in Sources */,
 				7C23031B2640E5FA00AA957B /* TopMoviePreview.swift in Sources */,
 				7C7B748A263F4C3B00947986 /* Movie.swift in Sources */,
+				7C11FC74266D74DF00B8355B /* SearchResultGrid.swift in Sources */,
 				7C51F984264DDE45003A09DB /* ActivityIndicator.swift in Sources */,
 				7C0F0E0F263F45A3005E17AA /* buildNetflixApp.swift in Sources */,
 				7C23032E264398F800AA957B /* MoreLikeThis.swift in Sources */,

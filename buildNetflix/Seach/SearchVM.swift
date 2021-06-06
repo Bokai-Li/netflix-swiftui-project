@@ -41,7 +41,7 @@ class SearchVM: ObservableObject {
     private func getSearchResults(forText text: String){
         // imitate 25% chance for no search result (empty view)
         let haveResult = Int.random(in: 0...3)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             if haveResult == 0 {
                 self.searchResults = []
                 self.setViewState(to: .empty)

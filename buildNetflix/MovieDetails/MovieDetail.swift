@@ -20,7 +20,7 @@ struct MovieDetail: View {
     var body: some View {
         ZStack {
             Color.black
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .edgesIgnoringSafeArea(.all)
             
             ZStack {
                 VStack {
@@ -30,18 +30,20 @@ struct MovieDetail: View {
                         Button(action: {
                             movieDetailToShow = nil
                         }, label: {
-                            Image(systemName: "xmark")
-                                .font(.system(size:28))
+                            Image(systemName: "xmark.circle")
+                                .font(.system(size: 28))
                         })
-                    }.padding(.horizontal, 22)
+                    }
+                    .padding(.horizontal, 22)
                     
-                    ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false){
-                        VStack{
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack {
                             
-                            StandardHomeMovie(movie:movie)
-                                .frame(width: screen.width / 2.5)
+                            StandardHomeMovie(movie: movie)
+                                .frame(width: screen.width / 2.5, height: 200)
                             
-                            MovieInfoSubheadline(movie:movie)
+                            MovieInfoSubheadline(movie: movie)
+                                .padding(.top, 12)
                             
                             if movie.promotionHeadline != nil {
                                 Text(movie.promotionHeadline!)
@@ -52,40 +54,45 @@ struct MovieDetail: View {
                             PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
                                 //
                             }
+                            .padding(.vertical)
                             
-                            CurrentEpisodeInformation(movie:movie)
+                            CurrentEpisodeInformation(movie: movie)
                             
-                            CastInfo(movie:movie)
+                            CastInfo(movie: movie)
                             
-                            HStack (spacing:80){
-                                SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn:  true){
-                                    
-                                }
-                                SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: false){
-                                    
+                            HStack(spacing: 60) {
+                                SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                                    //
                                 }
                                 
-                                SmallVerticalButton(text: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true){
-                                    
+                                SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true) {
+                                    //
                                 }
+                                
+                                SmallVerticalButton(text: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true) {
+                                    //
+                                }
+                                
                                 Spacer()
                             }
                             .padding(.leading, 20)
                             
+                            
                             CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: movie, showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
+                            
                             
                         }
                         .padding(.horizontal, 10)
                     }
-                    
                     Spacer()
                 }
                 .foregroundColor(.white)
                 
                 if showSeasonPicker {
-                    Group{
+                    Group {
                         Color.black.opacity(0.9)
-                        VStack (spacing: 40) {
+                        
+                        VStack(spacing: 40) {
                             Spacer()
                             
                             ForEach(0..<(movie.numberOfSeasons ?? 0)) { season in
@@ -98,69 +105,52 @@ struct MovieDetail: View {
                                         .bold()
                                         .font(selectedSeason == season + 1 ? .title : .title2)
                                 })
-                                
                             }
                             
                             Spacer()
-                            Button(action:{
+                            
+                            Button(action: {
                                 self.showSeasonPicker = false
-                            }){
+                            }, label: {
                                 Image(systemName: "x.circle.fill")
                                     .foregroundColor(.white)
                                     .font(.system(size: 40))
                                     .scaleEffect(x: 1.1)
-                            }
+                            })
                             .padding(.bottom, 30)
-                            
                         }
                     }
-                    .ignoresSafeArea(.all)
+                    .edgesIgnoringSafeArea(.all)
                 }
             }
-            
         }
     }
 }
 
 struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail(movie: exampleMovie8, movieDetailToShow: .constant(nil))
+        MovieDetail(movie: generateMovies(1).first!, movieDetailToShow: .constant(nil))
     }
 }
+
+
 
 struct MovieInfoSubheadline: View {
     var movie: Movie
     
     var body: some View {
-        HStack(spacing: 18) {
+        HStack(spacing: 20) {
             Image(systemName: "hand.thumbsup.fill")
                 .foregroundColor(.white)
+            
             Text(String(movie.year))
             
             RatingView(rating: movie.rating)
             
             Text(movie.numberOfSeasonsDisplay)
-            
-            HDView()
         }
         .foregroundColor(.gray)
         .padding(.vertical, 6)
-    }
-}
-
-struct HDView: View {
-    var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 4)
-                .stroke(Color.gray, lineWidth: 2)
-                .foregroundColor(.black)
-                .frame(width: 30, height: 20)
-            
-            Text("HD")
-                .font(.system(size: 15))
-                .bold()
-        }
-        .frame(width:35, height:20)
     }
 }
 
@@ -171,12 +161,13 @@ struct RatingView: View {
         ZStack {
             Rectangle()
                 .foregroundColor(.gray)
+            
             Text(rating)
                 .foregroundColor(.white)
-                .font(.system(size:12))
+                .font(.system(size: 12))
                 .bold()
         }
-        .frame(width:CGFloat(rating.count)*10, height:20)
+        .frame(width: 50, height: 20)
     }
 }
 
@@ -205,6 +196,7 @@ struct CastInfo: View {
 
 struct CurrentEpisodeInformation: View {
     var movie: Movie
+    
     var body: some View {
         Group {
             HStack {
@@ -214,6 +206,7 @@ struct CurrentEpisodeInformation: View {
                 Spacer()
             }
             .padding(.vertical, 4)
+            
             HStack {
                 Text(movie.episodeDescriptionDisplay)
                     .font(.subheadline)
