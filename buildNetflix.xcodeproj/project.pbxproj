@@ -12,6 +12,11 @@
 		7C0F0E13263F45B0005E17AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C0F0E12263F45B0005E17AA /* Assets.xcassets */; };
 		7C0F0E16263F45B0005E17AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C0F0E15263F45B0005E17AA /* Preview Assets.xcassets */; };
 		7C0F0E1E263F46D5005E17AA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F0E1D263F46D5005E17AA /* HomeView.swift */; };
+		7C108783267D456000F8EC1F /* ComingSoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C108782267D456000F8EC1F /* ComingSoon.swift */; };
+		7C108785267D460300F8EC1F /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C108784267D460300F8EC1F /* NotificationBar.swift */; };
+		7C108787267D520800F8EC1F /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C108786267D520800F8EC1F /* ComingSoonRow.swift */; };
+		7C108789267D548000F8EC1F /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C108788267D548000F8EC1F /* ComingSoonVM.swift */; };
+		7C10878B267D549400F8EC1F /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10878A267D549400F8EC1F /* TrackableScrollView.swift */; };
 		7C11FC72266D5EA600B8355B /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C11FC71266D5EA600B8355B /* PopularMovieView.swift */; };
 		7C11FC74266D74DF00B8355B /* SearchResultGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C11FC73266D74DF00B8355B /* SearchResultGrid.swift */; };
 		7C19361426458AD7009A9382 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C19361326458AD7009A9382 /* VideoPreviewImage.swift */; };
@@ -48,6 +53,11 @@
 		7C0F0E15263F45B0005E17AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C0F0E17263F45B0005E17AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C0F0E1D263F46D5005E17AA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7C108782267D456000F8EC1F /* ComingSoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoon.swift; sourceTree = "<group>"; };
+		7C108784267D460300F8EC1F /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
+		7C108786267D520800F8EC1F /* ComingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRow.swift; sourceTree = "<group>"; };
+		7C108788267D548000F8EC1F /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
+		7C10878A267D549400F8EC1F /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		7C11FC71266D5EA600B8355B /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
 		7C11FC73266D74DF00B8355B /* SearchResultGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultGrid.swift; sourceTree = "<group>"; };
 		7C19361326458AD7009A9382 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
@@ -106,6 +116,7 @@
 		7C0F0E0D263F45A3005E17AA /* buildNetflix */ = {
 			isa = PBXGroup;
 			children = (
+				7C108781267D455200F8EC1F /* ComingSoon */,
 				7C0F0E0E263F45A3005E17AA /* buildNetflixApp.swift */,
 				7C0F0E10263F45A3005E17AA /* ContentView.swift */,
 				7C51F97E264C7435003A09DB /* Seach */,
@@ -128,6 +139,18 @@
 				7C0F0E15263F45B0005E17AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C108781267D455200F8EC1F /* ComingSoon */ = {
+			isa = PBXGroup;
+			children = (
+				7C108782267D456000F8EC1F /* ComingSoon.swift */,
+				7C108784267D460300F8EC1F /* NotificationBar.swift */,
+				7C108786267D520800F8EC1F /* ComingSoonRow.swift */,
+				7C108788267D548000F8EC1F /* ComingSoonVM.swift */,
+				7C10878A267D549400F8EC1F /* TrackableScrollView.swift */,
+			);
+			path = ComingSoon;
 			sourceTree = "<group>";
 		};
 		7C23032226422D6B00AA957B /* HomeViews */ = {
@@ -284,12 +307,16 @@
 				7C19361A2645B2E9009A9382 /* EpisodesView.swift in Sources */,
 				7C51F98A264EFEFC003A09DB /* GenerateMovies.swift in Sources */,
 				7C51F988264EFD03003A09DB /* SearchVM.swift in Sources */,
+				7C108785267D460300F8EC1F /* NotificationBar.swift in Sources */,
 				7C51F982264C7562003A09DB /* Colors.swift in Sources */,
 				7C7B748E263F4CA700947986 /* GlobalHelpers.swift in Sources */,
+				7C108783267D456000F8EC1F /* ComingSoon.swift in Sources */,
 				7C23033026439D3300AA957B /* Trailer.swift in Sources */,
 				7C51F986264EFCD9003A09DB /* SearchView.swift in Sources */,
 				7C2303292642323000AA957B /* Episode.swift in Sources */,
 				7C0F0E1E263F46D5005E17AA /* HomeView.swift in Sources */,
+				7C10878B267D549400F8EC1F /* TrackableScrollView.swift in Sources */,
+				7C108789267D548000F8EC1F /* ComingSoonVM.swift in Sources */,
 				7C7B7490263F4EEB00947986 /* HomeViewModel.swift in Sources */,
 				7C19361426458AD7009A9382 /* VideoPreviewImage.swift in Sources */,
 				7C0F0E11263F45A3005E17AA /* ContentView.swift in Sources */,
@@ -302,6 +329,7 @@
 				7C23032E264398F800AA957B /* MoreLikeThis.swift in Sources */,
 				7C51F97D264B6F1D003A09DB /* HomeStack.swift in Sources */,
 				7C51F980264C743F003A09DB /* SearchBar.swift in Sources */,
+				7C108787267D520800F8EC1F /* ComingSoonRow.swift in Sources */,
 				7C23032B2642546300AA957B /* CustomTabSwitcher.swift in Sources */,
 				7C19361626458F5D009A9382 /* TrailerList.swift in Sources */,
 				7C23031F2641AC3000AA957B /* SmallVerticalButton.swift in Sources */,

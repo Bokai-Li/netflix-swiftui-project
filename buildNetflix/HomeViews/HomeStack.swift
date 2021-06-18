@@ -30,7 +30,7 @@ struct HomeStack: View {
                         ForEach(vm.getMovie(forCat: category, andHomeRow: topRowSelection, andGenre: selectedGenre)){ movie in
                             StandardHomeMovie(movie: movie)
                                 .frame(width: 100, height: 200)
-                                .padding(.horizontal,20)
+                                .padding(.horizontal,10)
                                 .onTapGesture {
                                     movieDetailToShow = movie
                                 }
