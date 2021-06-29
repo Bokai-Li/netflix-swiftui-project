@@ -11,7 +11,7 @@ struct Movie: Identifiable {
     var id: String
     var name: String
     var thumbnailURL: URL
-
+    
     var categories: [String]
     var genre: HomeGenre = .AllGenres
     
@@ -23,6 +23,7 @@ struct Movie: Identifiable {
     // Personalization
     var currentEpisode: CurrentEpisodeInfo?
     
+    
     var defaultEpisodeInfo: CurrentEpisodeInfo
     var creators: String
     var cast: String
@@ -32,12 +33,15 @@ struct Movie: Identifiable {
     var episodes: [Episode]?
     
     var movieType: MovieType {
-        episodes == nil ? .movie : .tvShow
+        return episodes == nil ? .movie : .tvShow
     }
     
     var promotionHeadline: String?
     
     var trailers: [Trailer]
+    
+    var previewImageName: String
+    var previewVideoURL: URL?
     
     var numberOfSeasonsDisplay: String {
         if let num = numberOfSeasons {
