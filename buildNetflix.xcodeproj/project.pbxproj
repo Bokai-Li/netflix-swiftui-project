@@ -47,6 +47,8 @@
 		7C7B748E263F4CA700947986 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B748D263F4CA700947986 /* GlobalHelpers.swift */; };
 		7C7B7490263F4EEB00947986 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B748F263F4EEB00947986 /* HomeViewModel.swift */; };
 		7C93DC85268E1F4A00EE5F10 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93DC84268E1F4A00EE5F10 /* PagerView.swift */; };
+		7C93DC88268E49CA00EE5F10 /* VideoPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 7C93DC87268E49CA00EE5F10 /* VideoPlayer */; };
+		7C93DC8A268E49E900EE5F10 /* TrailerPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93DC89268E49E900EE5F10 /* TrailerPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +93,7 @@
 		7C7B748D263F4CA700947986 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		7C7B748F263F4EEB00947986 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7C93DC84268E1F4A00EE5F10 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		7C93DC89268E49E900EE5F10 /* TrailerPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C7B7488263F4C1500947986 /* KingfisherSwiftUI in Frameworks */,
+				7C93DC88268E49CA00EE5F10 /* VideoPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +256,7 @@
 				7C545702268AAD8B00538923 /* MoviePreviewCell.swift */,
 				7C545705268AB30E00538923 /* MoviePreviewRow.swift */,
 				7C93DC84268E1F4A00EE5F10 /* PagerView.swift */,
+				7C93DC89268E49E900EE5F10 /* TrailerPlayerView.swift */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			name = buildNetflix;
 			packageProductDependencies = (
 				7C7B7487263F4C1500947986 /* KingfisherSwiftUI */,
+				7C93DC87268E49CA00EE5F10 /* VideoPlayer */,
 			);
 			productName = buildNetflix;
 			productReference = 7C0F0E0B263F45A3005E17AA /* buildNetflix.app */;
@@ -304,6 +310,7 @@
 			mainGroup = 7C0F0E02263F45A3005E17AA;
 			packageReferences = (
 				7C7B7486263F4C1500947986 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7C93DC86268E49CA00EE5F10 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
 			);
 			productRefGroup = 7C0F0E0C263F45A3005E17AA /* Products */;
 			projectDirPath = "";
@@ -368,6 +375,7 @@
 				7C2303212641B89000AA957B /* PlayButton.swift in Sources */,
 				7C23033226439D6B00AA957B /* SwiftUIVideoView.swift in Sources */,
 				7C23032726422E1600AA957B /* MovieDetail.swift in Sources */,
+				7C93DC8A268E49E900EE5F10 /* TrailerPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +574,14 @@
 				minimumVersion = 5.14.1;
 			};
 		};
+		7C93DC86268E49CA00EE5F10 /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -573,6 +589,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7C7B7486263F4C1500947986 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
+		};
+		7C93DC87268E49CA00EE5F10 /* VideoPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C93DC86268E49CA00EE5F10 /* XCRemoteSwiftPackageReference "VideoPlayer" */;
+			productName = VideoPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
