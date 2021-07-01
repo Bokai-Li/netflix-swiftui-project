@@ -195,6 +195,7 @@ let exampleMovie8 = Movie(
     year:2019,
     rating:"TV-14",
     numberOfSeasons: 2,
+    accentColor: Color.blue, 
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Haruo Sotozaki, Hikaru Kondo, Akifumi Fujio, Masanori Miyake, Yūma Takahashi",
     cast: "Natsuki Hanae, Akari Kito, Hiro Shimono",
