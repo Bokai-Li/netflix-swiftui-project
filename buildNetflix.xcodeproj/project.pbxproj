@@ -51,6 +51,7 @@
 		7C93DC8A268E49E900EE5F10 /* TrailerPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93DC89268E49E900EE5F10 /* TrailerPlayerView.swift */; };
 		7C93DC8C268E51D200EE5F10 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93DC8B268E51D200EE5F10 /* PreviewView.swift */; };
 		7C93DC8E268E51DE00EE5F10 /* PreviewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93DC8D268E51DE00EE5F10 /* PreviewVM.swift */; };
+		7C93DC972693E4A200EE5F10 /* PreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93DC962693E4A200EE5F10 /* PreviewList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		7C93DC89268E49E900EE5F10 /* TrailerPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerPlayerView.swift; sourceTree = "<group>"; };
 		7C93DC8B268E51D200EE5F10 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		7C93DC8D268E51DE00EE5F10 /* PreviewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVM.swift; sourceTree = "<group>"; };
+		7C93DC962693E4A200EE5F10 /* PreviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 				7C93DC89268E49E900EE5F10 /* TrailerPlayerView.swift */,
 				7C93DC8B268E51D200EE5F10 /* PreviewView.swift */,
 				7C93DC8D268E51DE00EE5F10 /* PreviewVM.swift */,
+				7C93DC962693E4A200EE5F10 /* PreviewList.swift */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				7C51F980264C743F003A09DB /* SearchBar.swift in Sources */,
 				7C108787267D520800F8EC1F /* ComingSoonRow.swift in Sources */,
 				7C23032B2642546300AA957B /* CustomTabSwitcher.swift in Sources */,
+				7C93DC972693E4A200EE5F10 /* PreviewList.swift in Sources */,
 				7C19361626458F5D009A9382 /* TrailerList.swift in Sources */,
 				7C23031F2641AC3000AA957B /* SmallVerticalButton.swift in Sources */,
 				7C2303212641B89000AA957B /* PlayButton.swift in Sources */,
