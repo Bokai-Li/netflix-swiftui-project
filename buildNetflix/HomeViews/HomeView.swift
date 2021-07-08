@@ -33,7 +33,7 @@ struct HomeView: View {
                 LazyVStack {
                     
                     TopRowButtons(topRowSelection: $topRowSelection, homeGenre: $homeGenre, showGenreSelection: $showGenreSelection, showTopRowSelection: $showTopRowSelection)
-                    
+                    //has zIndex 0 by default
                     TopMoviePreview(movie: exampleMovie5)
                         .frame(width: screen.width)
                         .padding(.top, -110)
@@ -50,11 +50,11 @@ struct HomeView: View {
             }
             
             if movieDetailToShow != nil {
-                MovieDetail(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
-                    .animation(.easeIn)
-                    .transition(.opacity)
+                MovieDetail(movie: movieDetailToShow!,movieDetailToShow: $movieDetailToShow)
+                    .transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.2)))
+                //                    .animation(.easeIn)
+                //                    .transition(.opacity)
             }
-            
             if showTopRowSelection {
                 Group {
                     Color.black.opacity(0.9)

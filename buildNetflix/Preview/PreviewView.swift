@@ -40,6 +40,7 @@ struct PreviewView: View {
                 
                 HStack {
                     ForEach(0..<vm.movie.categories.count) { catIndex in
+                        
                         let category = vm.movie.categories[catIndex]
                         
                         HStack {

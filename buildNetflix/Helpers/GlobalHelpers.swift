@@ -206,7 +206,7 @@ let exampleMovie8 = Movie(
     previewImageName: "ozarkPreview",
     previewVideoURL: exampleVideoURL)
 
-var exampleMovies: [Movie] { return [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6,exampleMovie7,exampleMovie8].shuffled() }
+var exampleMovies: [Movie] { return [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6,exampleMovie7,exampleMovie8] }
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Cruelty", description: "After selling charcoal in town, Tanjiro returns home to find his whole family dead. Only his sister Nezuko has survived -- but she’s changed.", season: 1, episode: 1)
 
