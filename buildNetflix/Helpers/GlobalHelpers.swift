@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let exampleVideoURL = URL(string: "https://temp.media/video/?height=90&width=160&length=10&text=")!
+let exampleVideoURL = URL(string: "https://im2.ezgif.com/tmp/ezgif-2-944a5c7c62f4.mp4")!
 let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
 let exampleImageURL2 = URL(string: "https://picsum.photos/300/105")!
 let exampleImageURL3 = URL(string: "https://picsum.photos/300/106")!
